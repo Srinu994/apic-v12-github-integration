@@ -2,5 +2,5 @@ openapi: 3.0.4
 info:
   title: test-api
   version: '1.0'
-  description: ''
+  description: this is for testing purpose.
 paths: {}
