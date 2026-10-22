@@ -1,0 +1,23 @@
+kind: Plan
+apiVersion: api.ibm.com/v1
+metadata:
+  name: test-plan
+  namespace: test-project
+  version: '1.0'
+  tags: []
+  description: ''
+spec:
+  qos:
+    withQuota:
+      plan-limit:
+        - $ref: test-project:Quota-1905vy:1.0
+  extensions:
+    webm-gateway:
+      apiVersion: api.ibm.com/v1
+      spec:
+        withRateLimit:
+          - name: test-ratelimit
+            maxRequest: 100
+            interval: 1m
+            alertFrequency: always
+            alertMessage: limit has been reached, please try again after some time.

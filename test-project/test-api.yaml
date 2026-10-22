@@ -1,0 +1,13 @@
+kind: API
+apiVersion: api.ibm.com/v1
+metadata:
+  name: test-api
+  version: '1.0'
+  namespace: test-project
+  tags: []
+  type: REST
+spec:
+  api-spec:
+    $path: ./test-api-spec.yml
+  policy-sequence:
+    - $ref: test-project:test-policy:1.0

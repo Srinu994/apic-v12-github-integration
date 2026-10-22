@@ -1,0 +1,154 @@
+{
+  "nodes": [
+    {
+      "id": "b0703ad3-b11b-4c7a-bf39-e7c01ef0e4a6:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/.project-index",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792645807850,
+      "schemaVersion": 1
+    },
+    {
+      "id": "b63d6ad6-8c1a-4cb2-bebb-cea266d0bef8:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/test-prod.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792646160824,
+      "schemaVersion": 1,
+      "kind": "Product",
+      "name": "test-prod",
+      "namespace": "test-project",
+      "version": "1.0",
+      "contentHash": "fbe08c0896bd9dae"
+    },
+    {
+      "id": "b946c94f-d1b7-41a7-abe6-078e5e1bc5d5:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/test-plan.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792645961030,
+      "schemaVersion": 1,
+      "kind": "Plan",
+      "name": "test-plan",
+      "namespace": "test-project",
+      "version": "1.0",
+      "contentHash": "54284ee5949273f4"
+    },
+    {
+      "id": "bbcd2b24-754c-451f-a40d-24c216bee931:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/test-api-spec.yml",
+      "docIndex": 0,
+      "assetType": "support",
+      "lastIndexed": 1792646035447,
+      "schemaVersion": 1
+    },
+    {
+      "id": "eb3e1a15-d448-4b09-8dfd-77f17bfef66b:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/test-api.yaml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792646073872,
+      "schemaVersion": 1,
+      "kind": "API",
+      "name": "test-api",
+      "namespace": "test-project",
+      "version": "1.0",
+      "contentHash": "f18da77a44488780"
+    },
+    {
+      "id": "fa9740b3-018d-4afa-95be-3c807df07cff:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/test-policy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792646120880,
+      "schemaVersion": 1,
+      "kind": "DataPowerAssembly",
+      "name": "test-policy",
+      "namespace": "test-project",
+      "version": "1.0",
+      "contentHash": "59cf75b5907c04d1"
+    },
+    {
+      "id": "fb79abe3-f05c-4bd8-97c0-bf39c55988b4:0",
+      "projectId": "UwYV0BIf",
+      "filePath": "test-project/Quota-1905vy.yml",
+      "docIndex": 0,
+      "assetType": "resource",
+      "lastIndexed": 1792645908190,
+      "schemaVersion": 1,
+      "kind": "Quota",
+      "name": "Quota-1905vy",
+      "namespace": "test-project",
+      "version": "1.0",
+      "contentHash": "97bfc6c966792161"
+    }
+  ],
+  "edges": [
+    {
+      "id": "0571cdfb-2c23-4c5e-9a28-9bb77cb4a8f5",
+      "projectId": "UwYV0BIf",
+      "sourceNodeId": "eb3e1a15-d448-4b09-8dfd-77f17bfef66b:0",
+      "targetNodeId": "bbcd2b24-754c-451f-a40d-24c216bee931:0",
+      "targetRefType": "same-project",
+      "targetRefString": "./test-api-spec.yml",
+      "targetRefKind": "support",
+      "isValid": true,
+      "createdAt": 1792646036461,
+      "lastValidated": 1792646036461
+    },
+    {
+      "id": "314853fc-4af5-4d05-a4c0-2dfe680673c3",
+      "projectId": "UwYV0BIf",
+      "sourceNodeId": "b63d6ad6-8c1a-4cb2-bebb-cea266d0bef8:0",
+      "targetNodeId": "eb3e1a15-d448-4b09-8dfd-77f17bfef66b:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test-project:test-api:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792646140654,
+      "lastValidated": 1792646140654
+    },
+    {
+      "id": "35b80c30-7477-40b3-b2d7-d98e5f2f395a",
+      "projectId": "UwYV0BIf",
+      "sourceNodeId": "b63d6ad6-8c1a-4cb2-bebb-cea266d0bef8:0",
+      "targetNodeId": "b946c94f-d1b7-41a7-abe6-078e5e1bc5d5:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test-project:test-plan:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792645988587,
+      "lastValidated": 1792645988587
+    },
+    {
+      "id": "42d8c6ec-d209-4f9c-810d-6345307aa2c5",
+      "projectId": "UwYV0BIf",
+      "sourceNodeId": "b946c94f-d1b7-41a7-abe6-078e5e1bc5d5:0",
+      "targetNodeId": "fb79abe3-f05c-4bd8-97c0-bf39c55988b4:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test-project:Quota-1905vy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792645909118,
+      "lastValidated": 1792645909118
+    },
+    {
+      "id": "6c8236ff-598a-4118-bf19-49f120258cf4",
+      "projectId": "UwYV0BIf",
+      "sourceNodeId": "eb3e1a15-d448-4b09-8dfd-77f17bfef66b:0",
+      "targetNodeId": "fa9740b3-018d-4afa-95be-3c807df07cff:0",
+      "targetRefType": "same-project",
+      "targetRefString": "test-project:test-policy:1.0",
+      "targetRefKind": "resource",
+      "isValid": true,
+      "createdAt": 1792646073874,
+      "lastValidated": 1792646120891
+    }
+  ]
+}

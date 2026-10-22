@@ -1,0 +1,27 @@
+kind: Product
+apiVersion: api.ibm.com/v1
+metadata:
+  name: test-prod
+  namespace: test-project
+  version: '1.0'
+  tags: []
+spec:
+  apis:
+    - $ref: test-project:test-api:1.0
+  plans:
+    - $ref: test-project:test-plan:1.0
+  extensions:
+    portal-config:
+      apiVersion: api.ibm.com/v1
+      spec:
+        visibility:
+          view:
+            type: authenticated
+            orgs: []
+            enabled: true
+            tags: []
+          subscribe:
+            type: authenticated
+            orgs: []
+            enabled: true
+            tags: []
