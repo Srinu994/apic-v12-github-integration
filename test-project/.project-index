@@ -52,13 +52,13 @@
       "filePath": "test-project/test-api.yaml",
       "docIndex": 0,
       "assetType": "resource",
-      "lastIndexed": 1792646073872,
+      "lastIndexed": 1792760118848,
       "schemaVersion": 1,
       "kind": "API",
-      "name": "test-api",
+      "name": "test-apiv2",
       "namespace": "test-project",
       "version": "1.0",
-      "contentHash": "f18da77a44488780"
+      "contentHash": "2c733310510f89c5"
     },
     {
       "id": "fa9740b3-018d-4afa-95be-3c807df07cff:0",
@@ -106,13 +106,14 @@
       "id": "314853fc-4af5-4d05-a4c0-2dfe680673c3",
       "projectId": "UwYV0BIf",
       "sourceNodeId": "b63d6ad6-8c1a-4cb2-bebb-cea266d0bef8:0",
-      "targetNodeId": "eb3e1a15-d448-4b09-8dfd-77f17bfef66b:0",
+      "targetNodeId": null,
       "targetRefType": "same-project",
       "targetRefString": "test-project:test-api:1.0",
       "targetRefKind": "resource",
-      "isValid": true,
+      "isValid": false,
       "createdAt": 1792646140654,
-      "lastValidated": 1792646140654
+      "lastValidated": 1792760118850,
+      "invalidReason": "Target node data changed; edge pending re-resolution"
     },
     {
       "id": "35b80c30-7477-40b3-b2d7-d98e5f2f395a",
